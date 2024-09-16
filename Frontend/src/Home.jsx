@@ -18,7 +18,7 @@ export default function Home() {
                 setError('Failed to fetch data');
                 setLoading(false);  // Set loading to false on error
             });
-    }, []);  // Fetch data only once when the component mounts
+    }, [data]);  // Fetch data only once when the component mounts
 
     // Delete function
     const deleteItem = (id) => {
